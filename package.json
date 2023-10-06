@@ -47,12 +47,16 @@
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./styles.css": "./dist/index.css"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "files": [
     "dist"
+  ],
+  "sideEffects": [
+    "*.css"
   ],
   "engines": {
     "node": ">=16.20.1"
