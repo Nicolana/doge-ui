@@ -49,6 +49,8 @@
       "import": "./dist/index.mjs"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "files": [
     "dist"
   ],
