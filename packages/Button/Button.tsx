@@ -22,6 +22,7 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  children?: React.ReactNode;
 }
 
 /**
@@ -32,6 +33,7 @@ const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  children,
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
@@ -42,11 +44,7 @@ const Button = ({
       {...props}
     >
       {label}
-      <style jsx>{`
-        button {
-          background-color: ${backgroundColor};
-        }
-      `}</style>
+      {children}
     </button>
   );
 };
