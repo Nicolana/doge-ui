@@ -2,10 +2,11 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: [
-    'packages/**/*.tsx',
-    'packages/**/!(*.stories).ts'
+    'packages/index.ts'
+    // 'packages/**/*.tsx',
+    // 'packages/**/!(*.stories).ts'
   ],
-  ignoreWatch: ['node_modules', 'dist', 'build'], // 不监听指定文件夹的更改
+  // ignoreWatch: ['node_modules', 'dist', 'build'], // 不监听指定文件夹的更改
   external: [
     "react",
     "react-dom"
@@ -16,7 +17,7 @@ export default defineConfig({
   clean: true,
   minify: false,
   dts: true,
-  bundle: false,
+  // bundle: false,
   outDir: "dist",
   format: [
     "cjs",
