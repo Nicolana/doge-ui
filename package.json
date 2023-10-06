@@ -1,12 +1,13 @@
 {
-  "name": "doge-ui",
+  "name": "nidoge-ui",
   "version": "0.1.0",
   "author": "Nicolana",
-  "description": "doge React UI 组件库",
+  "description": "nidoge React UI 组件库",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xxx/shang-utils"
+    "url": "https://github.com/Nicolana/doge-ui"
   },
+  "license": "ISC",
   "scripts": {
     "dev": "npm run storybook",
     "build": "tsup",
